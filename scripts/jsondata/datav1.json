@@ -1,0 +1,75 @@
+[ { "desc" : "Analysis",
+    "name" : "Project #1",
+    "values" : [ { "customClass" : "ganttRed",
+          "from" : "/Date(1320192000000)/",
+          "id" : "t01",
+          "label" : "Requirement Gathering",
+          "to" : "/Date(1322401600000)/"
+        } ]
+  },
+  { "desc" : "Scoping",
+    "name" : " ",
+    "values" : [ { "customClass" : "ganttRed",
+          "from" : "/Date(1322611200000)/",
+          "id" : "t02",
+          "label" : "Scoping",
+          "to" : "/Date(1323302400000)/"
+        } ]
+  },
+  { "desc" : "Development",
+    "name" : "Project #2",
+    "values" : [ { "customClass" : "ganttGreen",
+          "from" : "/Date(1323802400000)/",
+          "label" : "Development",
+          "to" : "/Date(1325685200000)/"
+        } ]
+  },
+  { "desc" : "Showcasing",
+    "name" : " ",
+    "values" : [ { "customClass" : "ganttBlue",
+          "from" : "/Date(1325685200000)/",
+          "label" : "Showcasing",
+          "to" : "/Date(1325695200000)/"
+        } ]
+  },
+  { "desc" : "Development",
+    "name" : "Project #3",
+    "values" : [ { "customClass" : "ganttGreen",
+          "from" : "/Date(1326785200000)/",
+          "label" : "Development",
+          "to" : "/Date(1325785200000)/"
+        } ]
+  },
+  { "desc" : "Showcasing",
+    "name" : " ",
+    "values" : [ { "customClass" : "ganttBlue",
+          "from" : "/Date(1328785200000)/",
+          "label" : "Showcasing",
+          "to" : "/Date(1328905200000)/"
+        } ]
+  },
+  { "desc" : "Training",
+    "name" : "Project #4",
+    "values" : [ { "customClass" : "ganttOrange",
+          "from" : "/Date(1330011200000)/",
+          "label" : "Training",
+          "to" : "/Date(1336611200000)/"
+        } ]
+  },
+  { "desc" : "Deployment",
+    "name" : " ",
+    "values" : [ { "customClass" : "ganttOrange",
+          "from" : "/Date(1336611200000)/",
+          "label" : "Deployment",
+          "to" : "/Date(1338711200000)/"
+        } ]
+  },
+  { "desc" : "Warranty Period",
+    "name" : " ",
+    "values" : [ { "customClass" : "ganttOrange",
+          "from" : "/Date(1336611200000)/",
+          "label" : "Warranty Period",
+          "to" : "/Date(1349711200000)/"
+        } ]
+  }
+]

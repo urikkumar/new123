@@ -1,0 +1,155 @@
+
+<head>
+	<link rel="stylesheet" type="text/css" href="scripts/lib/gantt3/jquery-ui-1.8.4.css" />
+	<link rel="stylesheet" type="text/css" href="scripts/lib/gantt3/reset.css" />
+	<link rel="stylesheet" type="text/css" href="scripts/lib/gantt3/jquery.ganttView.css" />
+	<style type="text/css">
+
+	       body {
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 13px;
+                padding: 0 0 50px 0;
+
+            }
+            .contain {
+                width: 800px;
+                margin: 0 auto;
+            }
+            .ganttview-slide-container {
+                width: inherit !important;
+                height:inherit !important;
+            }
+
+            
+             #ganttChart {
+                width: inherit !important;
+                height:inherit !important;
+                margin: 40px auto;
+                border: 14px solid #ddd;
+                    -webkit-border-radius: 6px;
+                    -moz-border-radius: 6px;
+                    border-radius: 6px;
+                        -webkit-box-sizing: border-box;
+                        -moz-box-sizing: border-box;
+                        box-sizing: border-box;
+            }
+            
+            h1 {
+                margin: 40px 0 20px 0;
+            }
+            h2 {
+                font-size: 1.5em;
+                padding-bottom: 3px;
+                border-bottom: 1px solid #DDD;
+                margin-top: 50px;
+                margin-bottom: 25px;
+            }
+            table th:first-child {
+                width: 150px;
+            }
+        </style>
+	<title>jQuery Gantt</title>
+</head>
+<div class="breadcrumbs" id="breadcrumbs">
+    <script type="text/javascript">
+    try {
+        ace.settings.check('breadcrumbs', 'fixed')
+    } catch (e) {}
+    </script>
+
+    <ul class="breadcrumb">
+        <li>
+            <i class="icon-home home-icon"></i>
+            <a href="#">Home</a>
+        </li>
+
+        <li class="active">Gantt Veiw v3 </li>
+    </ul>
+    <!-- .breadcrumb -->
+
+    <div class="nav-search" id="nav-search">
+        <form class="form-search">
+            <span class="input-icon">
+                <input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+                <i class="icon-search nav-search-icon"></i>
+            </span>
+        </form>
+    </div>
+    <!-- #nav-search -->
+</div>
+<body>
+
+<div class="page-content">
+    <div class="row">
+        <div class="col-xs-12">
+            <!-- PAGE CONTENT BEGINS -->
+
+
+         <div class="contain">
+            
+              <h3 class="header smaller lighter red">
+                        <span >
+                            <i class="icon-picture"></i>
+                            Gant chart view 3
+                        </span>
+                        </h3>
+	      <div id="ganttChart"></div>
+
+	      <br/><br/>
+	      <div id="eventMessage"></div> 
+          <div class="col-sm-12">
+                <h3 class="header smaller lighter green">Why ?</h3>
+
+                    <div class="well">
+                        <h4 class="red smaller lighter">Supports drag & drop</h4>
+                        </br>
+                        This chart is using jQuery.ganttView and supports drag & drop feature and displays messages on drag. 
+                    </br> </br> </br>
+                        <h4 class="red smaller lighter">Does not supports dependencies links</h4>
+                        </br>
+                       This is chart is using jquery.ganttView and does not supports dependency links
+
+
+                    </div>
+                </div>
+
+        </div>
+
+            <!-- PAGE CONTENT ENDS -->
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
+
+	<script type="text/javascript" src="scripts/lib/gantt3/jquery-1.4.2.js"></script>
+	<script type="text/javascript" src="scripts/lib/gantt3/date.js"></script>
+	<script type="text/javascript" src="scripts/lib/gantt3/jquery-ui-1.8.4.js"></script>
+	<script type="text/javascript" src="scripts/lib/gantt3/jquery.ganttView.js"></script>
+	<script type="text/javascript" src="scripts/lib/gantt3/data.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$("#ganttChart").ganttView({ 
+				data: ganttData,
+				slideWidth: 900,
+				behavior: {
+					onClick: function (data) { 
+						var msg = "You clicked on an event: { start: " + data.start.toString("M/d/yyyy") + ", end: " + data.end.toString("M/d/yyyy") + " }";
+						$("#eventMessage").text(msg);
+					},
+					onResize: function (data) { 
+						var msg = "You resized an event: { start: " + data.start.toString("M/d/yyyy") + ", end: " + data.end.toString("M/d/yyyy") + " }";
+						$("#eventMessage").text(msg);
+					},
+					onDrag: function (data) { 
+						var msg = "You dragged an event: { start: " + data.start.toString("M/d/yyyy") + ", end: " + data.end.toString("M/d/yyyy") + " }";
+						$("#eventMessage").text(msg);
+					}
+				}
+			});
+			
+			// $("#ganttChart").ganttView("setSlideWidth", 600);
+		});
+	</script>
+
+</body>
+

@@ -1,0 +1,15 @@
+div *, *:before, *:after :disabled {
+	
+}
+
+div *, *:before, *:after :disabled{
+-webkit-box-sizing: none;
+-moz-box-sizing: none;
+box-sizing: none;
+}
+div Pseudo ::after element
+*, *:before, *:after :disabled {
+-webkit-box-sizing: none;
+-moz-box-sizing: none;
+box-sizing: none;
+}

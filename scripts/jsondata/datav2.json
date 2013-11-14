@@ -1,0 +1,108 @@
+[
+ { "desc" : "→ Step B",
+    "name" : " Step A ",
+    "values" : [ { "customClass" : "ganttRed",
+          "dep" : "b1",
+          "desc" : "Id: 0<br/>Name:   Step A",
+          "from" : "/Date(1320182000000)/",
+          "id" : "b0",
+          "label" : " Step A",
+          "to" : "/Date(1320301600000)/"
+        } ]
+  },
+  { "desc" : "→ step C",
+    "name" : " Step B ",
+    "values" : [ { "customClass" : "ganttOrange",
+          "dep" : "b2",
+          "desc" : "Id: 1<br/>Name:   Step B",
+          "from" : "/Date(1320601600000)/",
+          "id" : "b1",
+          "label" : " Step B",
+          "to" : "/Date(1320870400000)/"
+        } ]
+  },
+  { "desc" : "→ step D",
+    "name" : " Step C ",
+    "values" : [ { "customClass" : "ganttGreen",
+          "dep" : "b3",
+          "desc" : "Id: 2<br/>Name:   Step C",
+          "from" : "/Date(1321192000000)/",
+          "id" : "b2",
+          "label" : " Step C",
+          "to" : "/Date(1321500400000)/"
+        } ]
+  },
+  { "desc" : "→ step E",
+    "name" : " Step D ",
+    "values" : [ { "dep" : "b4",
+          "desc" : "Id: 3<br/>Name:   Step D",
+          "from" : "/Date(1320302400000)/",
+          "id" : "b3",
+          "label" : " Step D",
+          "to" : "/Date(1320551600000)/"
+        } ]
+  },
+  { "desc" : "—",
+    "name" : " Step E ",
+    "values" : [ { "customClass" : "ganttRed",
+          "desc" : "Id: 4<br/>Name:   Step E",
+          "from" : "/Date(1320802400000)/",
+          "id" : "b4",
+          "label" : " Step E",
+          "to" : "/Date(1321994800000)/"
+        } ]
+  },
+  { "desc" : "→ step B",
+    "name" : " Step F ",
+    "values" : [ { "customClass" : "ganttOrange",
+          "dep" : "b1",
+          "desc" : "Id: 5<br/>Name:   Step F",
+          "from" : "/Date(1320192000000)/",
+          "id" : "b5",
+          "label" : " Step F",
+          "to" : "/Date(1320401600000)/"
+        } ]
+  },
+  { "desc" : "→ step C",
+    "name" : " Step G ",
+    "values" : [ { "customClass" : "ganttGreen",
+          "dep" : "b8",
+          "desc" : "Id: 6<br/>Name:   Step G",
+          "from" : "/Date(1320401600000)/",
+          "id" : "b6",
+          "label" : " Step G",
+          "to" : "/Date(1320570400000)/"
+        } ]
+  },
+  { "desc" : "→ Step J",
+    "name" : " Step H ",
+    "values" : [ { "dep" : "b9",
+          "desc" : "Id: 7<br/>Name:   Step H",
+          "from" : "/Date(1321192000000)/",
+          "id" : "b7",
+          "label" : " Step H",
+          "to" : "/Date(1321500400000)/"
+        } ]
+  },
+  { "desc" : "→ Step H",
+    "name" : " Step I ",
+    "values" : [ { "customClass" : "ganttRed",
+          "dep" : "b7",
+          "desc" : "Id: 8<br/>Name:   Step I",
+          "from" : "/Date(1320302400000)/",
+          "id" : "b8",
+          "label" : " Step I",
+          "to" : "/Date(1320551600000)/"
+        } ]
+  },
+  { "desc" : "—",
+    "name" : " Step J ",
+    "values" : [ { "customClass" : "ganttOrange",
+          "desc" : "Id: 9<br/>Name:   Step J",
+          "from" : "/Date(1320802400000)/",
+          "id" : "b9",
+          "label" : " Step J",
+          "to" : "/Date(1321994800000)/"
+        } ]
+  }
+]
